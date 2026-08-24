@@ -1,0 +1,894 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="./style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pen</title>
+  </head>
+  <body>
+
+    <script src="./script.js"></script>
+  </body>
+</html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Tawjih — Find Your Path</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<!-- =====================================================
+     NAVIGATION
+===================================================== -->
+
+<header class="navbar">
+
+    <div class="logo">
+        <span class="logo-mark">T</span>
+        <span>Tawjih</span>
+    </div>
+
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#universities">Universities</a>
+        <a href="#opportunities">Opportunities</a>
+        <a href="#find">Find My University</a>
+    </nav>
+
+    <button class="nav-button" onclick="scrollToSection('find')">
+        Find My Path
+    </button>
+
+</header>
+
+
+<!-- =====================================================
+     HERO
+===================================================== -->
+
+<main>
+
+<section id="home" class="hero">
+
+    <div class="hero-content">
+
+        <span class="small-label">
+            YOUR FUTURE STARTS HERE
+        </span>
+
+        <h1>
+            Find the path
+            <span>that fits you.</span>
+        </h1>
+
+        <p>
+            Explore universities, scholarships and opportunities
+            around the world and discover which paths match your
+            goals, interests and ambitions.
+        </p>
+
+        <div class="hero-buttons">
+
+            <button class="primary-button" onclick="scrollToSection('find')">
+                Find My University
+                <span>→</span>
+            </button>
+
+            <button class="secondary-button" onclick="scrollToSection('universities')">
+                Explore Universities
+            </button>
+
+        </div>
+
+    </div>
+
+
+    <div class="hero-card">
+
+        <div class="hero-card-top">
+            <span>✦</span>
+            <span>Your future</span>
+        </div>
+
+        <h3>
+            There is more than
+            one path to success.
+        </h3>
+
+        <p>
+            Discover opportunities that match
+            who you are and where you want to go.
+        </p>
+
+        <div class="hero-mini-stats">
+
+            <div>
+                <strong id="heroUniversityCount">0</strong>
+                <span>Universities</span>
+            </div>
+
+            <div>
+                <strong id="heroOpportunityCount">0</strong>
+                <span>Opportunities</span>
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =====================================================
+     STATISTICS
+===================================================== -->
+
+<section class="stats-section">
+
+    <div class="stat-card">
+
+        <div class="stat-icon">🎓</div>
+
+        <div>
+            <strong id="universityCount">0</strong>
+            <span>Universities</span>
+        </div>
+
+    </div>
+
+
+    <div class="stat-card">
+
+        <div class="stat-icon">🚀</div>
+
+        <div>
+            <strong id="opportunityCount">0</strong>
+            <span>Opportunities</span>
+        </div>
+
+    </div>
+
+
+    <div class="stat-card">
+
+        <div class="stat-icon">💰</div>
+
+        <div>
+            <strong>100+</strong>
+            <span>Scholarship paths</span>
+        </div>
+
+    </div>
+
+
+    <div class="stat-card">
+
+        <div class="stat-icon">🌍</div>
+
+        <div>
+            <strong>15+</strong>
+            <span>Countries</span>
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =====================================================
+     FIND YOUR UNIVERSITY
+===================================================== -->
+
+<section id="find" class="find-section">
+
+    <div class="section-heading">
+
+        <span class="small-label">
+            PERSONALIZED
+        </span>
+
+        <h2>
+            Find your best university
+        </h2>
+
+        <p>
+            Tell us a little about what you want.
+            We will find universities that could fit your path.
+        </p>
+
+    </div>
+
+
+    <div class="finder-card">
+
+
+        <!-- STEP 1 -->
+
+        <div class="finder-step">
+
+            <div class="step-number">
+                01
+            </div>
+
+            <div class="step-content">
+
+                <h3>
+                    What are you interested in?
+                </h3>
+
+                <p>
+                    Choose the fields you would like to explore.
+                </p>
+
+
+                <div class="choice-grid">
+
+                    <button class="choice" data-interest="Business">
+                        <span>💼</span>
+                        Business
+                    </button>
+
+                    <button class="choice" data-interest="Engineering">
+                        <span>⚙️</span>
+                        Engineering
+                    </button>
+
+                    <button class="choice" data-interest="Computer Science">
+                        <span>💻</span>
+                        Computer Science
+                    </button>
+
+                    <button class="choice" data-interest="Economics">
+                        <span>📈</span>
+                        Economics
+                    </button>
+
+                    <button class="choice" data-interest="Medicine">
+                        <span>🩺</span>
+                        Medicine
+                    </button>
+
+                    <button class="choice" data-interest="Political Science">
+                        <span>🌐</span>
+                        Politics & IR
+                    </button>
+
+                    <button class="choice" data-interest="Science">
+                        <span>🔬</span>
+                        Science
+                    </button>
+
+                    <button class="choice" data-interest="Arts">
+                        <span>🎨</span>
+                        Arts & Humanities
+                    </button>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <!-- STEP 2 -->
+
+        <div class="finder-step">
+
+            <div class="step-number">
+                02
+            </div>
+
+            <div class="step-content">
+
+                <h3>
+                    Where would you like to study?
+                </h3>
+
+                <p>
+                    Select one or more regions that interest you.
+                </p>
+
+
+                <div class="choice-grid country-grid">
+
+                    <button class="choice country-choice" data-country="Morocco">
+                        🇲🇦 Morocco
+                    </button>
+
+                    <button class="choice country-choice" data-country="United States">
+                        🇺🇸 United States
+                    </button>
+
+                    <button class="choice country-choice" data-country="United Kingdom">
+                        🇬🇧 United Kingdom
+                    </button>
+
+                    <button class="choice country-choice" data-country="France">
+                        🇫🇷 France
+                    </button>
+
+                    <button class="choice country-choice" data-country="Canada">
+                        🇨🇦 Canada
+                    </button>
+
+                    <button class="choice country-choice" data-country="Germany">
+                        🇩🇪 Germany
+                    </button>
+
+                    <button class="choice country-choice" data-country="Netherlands">
+                        🇳🇱 Netherlands
+                    </button>
+
+                    <button class="choice country-choice" data-country="All">
+                        🌍 Anywhere
+                    </button>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <!-- STEP 3 -->
+
+        <div class="finder-step">
+
+            <div class="step-number">
+                03
+            </div>
+
+            <div class="step-content">
+
+                <h3>
+                    What matters most to you?
+                </h3>
+
+                <p>
+                    Choose what you want your university search to prioritize.
+                </p>
+
+
+                <div class="goal-grid">
+
+                    <button class="goal choice" data-goal="scholarship">
+                        <span>💰</span>
+
+                        <div>
+                            <strong>Scholarship</strong>
+                            <small>Financial support</small>
+                        </div>
+
+                    </button>
+
+
+                    <button class="goal choice" data-goal="top">
+                        <span>🏆</span>
+
+                        <div>
+                            <strong>Top University</strong>
+                            <small>Academic excellence</small>
+                        </div>
+
+                    </button>
+
+
+                    <button class="goal choice" data-goal="international">
+                        <span>🌍</span>
+
+                        <div>
+                            <strong>International</strong>
+                            <small>Global experience</small>
+                        </div>
+
+                    </button>
+
+
+                    <button class="goal choice" data-goal="career">
+                        <span>💼</span>
+
+                        <div>
+                            <strong>Career</strong>
+                            <small>Future opportunities</small>
+                        </div>
+
+                    </button>
+
+
+                    <button class="goal choice" data-goal="research">
+                        <span>🔬</span>
+
+                        <div>
+                            <strong>Research</strong>
+                            <small>Innovation & science</small>
+                        </div>
+
+                    </button>
+
+
+                    <button class="goal choice" data-goal="leadership">
+                        <span>🌟</span>
+
+                        <div>
+                            <strong>Leadership</strong>
+                            <small>Impact & community</small>
+                        </div>
+
+                    </button>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <!-- FIND BUTTON -->
+
+        <div class="finder-action">
+
+            <button
+                id="findUniversitiesButton"
+                class="primary-button large-button"
+            >
+                ✨ Find My Best Universities
+            </button>
+
+            <p id="finderMessage">
+                Choose at least one interest to continue.
+            </p>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =====================================================
+     RECOMMENDATIONS
+===================================================== -->
+
+<section
+    id="recommendations"
+    class="recommendations-section hidden"
+>
+
+    <div class="section-heading">
+
+        <span class="small-label">
+            FOR YOU
+        </span>
+
+        <h2>
+            Your best matches
+        </h2>
+
+        <p>
+            Based on the choices you made, these universities
+            could be interesting paths for you.
+        </p>
+
+    </div>
+
+
+    <div
+        id="recommendationCards"
+        class="cards-grid"
+    >
+    </div>
+
+</section>
+
+
+<!-- =====================================================
+     UNIVERSITIES
+===================================================== -->
+
+<section id="universities" class="universities-section">
+
+    <div class="section-heading">
+
+        <span class="small-label">
+            EXPLORE
+        </span>
+
+        <h2>
+            Universities
+        </h2>
+
+        <p>
+            Explore universities and schools from Morocco
+            and around the world.
+        </p>
+
+    </div>
+
+
+    <!-- SEARCH -->
+
+    <div class="search-container">
+
+        <div class="search-box">
+
+            <span>🔎</span>
+
+            <input
+                type="text"
+                id="universitySearch"
+                placeholder="Search universities, countries or fields..."
+            >
+
+        </div>
+
+    </div>
+
+
+    <!-- FILTERS -->
+
+    <div class="filters">
+
+        <select id="countryFilter">
+
+            <option value="All">
+                All countries
+            </option>
+
+        </select>
+
+
+        <select id="fieldFilter">
+
+            <option value="All">
+                All fields
+            </option>
+
+        </select>
+
+
+        <select id="levelFilter">
+
+            <option value="All">
+                All levels
+            </option>
+
+            <option value="Bachelor">
+                Bachelor
+            </option>
+
+            <option value="Engineering">
+                Engineering
+            </option>
+
+            <option value="Foundation">
+                Foundation
+            </option>
+
+        </select>
+
+
+        <button
+            id="resetFilters"
+            class="reset-button"
+        >
+            Reset
+        </button>
+
+    </div>
+
+
+    <!-- UNIVERSITY CARDS -->
+
+    <div
+        id="universityCards"
+        class="cards-grid"
+    >
+    </div>
+
+
+    <div
+        id="noUniversities"
+        class="empty-state hidden"
+    >
+
+        <span>🔎</span>
+
+        <h3>
+            No universities found
+        </h3>
+
+        <p>
+            Try changing your search or filters.
+        </p>
+
+    </div>
+
+</section>
+
+
+<!-- =====================================================
+     OPPORTUNITIES
+===================================================== -->
+
+<section
+    id="opportunities"
+    class="opportunities-section"
+>
+
+    <div class="section-heading">
+
+        <span class="small-label">
+            DISCOVER MORE
+        </span>
+
+        <h2>
+            Opportunities
+        </h2>
+
+        <p>
+            Competitions, leadership programs, MUNs,
+            scholarships and other opportunities for students.
+        </p>
+
+    </div>
+
+
+    <div class="opportunity-filters">
+
+        <button
+            class="opportunity-filter active"
+            data-opportunity-filter="All"
+        >
+            All
+        </button>
+
+        <button
+            class="opportunity-filter"
+            data-opportunity-filter="Competition"
+        >
+            Competitions
+        </button>
+
+        <button
+            class="opportunity-filter"
+            data-opportunity-filter="Leadership"
+        >
+            Leadership
+        </button>
+
+        <button
+            class="opportunity-filter"
+            data-opportunity-filter="Scholarship"
+        >
+            Scholarships
+        </button>
+
+        <button
+            class="opportunity-filter"
+            data-opportunity-filter="STEM"
+        >
+            STEM
+        </button>
+
+        <button
+            class="opportunity-filter"
+            data-opportunity-filter="MUN"
+        >
+            MUN
+        </button>
+
+    </div>
+
+
+    <div
+        id="opportunityCards"
+        class="cards-grid"
+    >
+    </div>
+
+</section>
+
+
+<!-- =====================================================
+     WHY TAWJIH
+===================================================== -->
+
+<section class="why-section">
+
+    <div class="section-heading">
+
+        <span class="small-label">
+            WHY TAWJIH
+        </span>
+
+        <h2>
+            More than a university search.
+        </h2>
+
+        <p>
+            Tawjih helps students understand their options
+            and discover paths they may not have considered.
+        </p>
+
+    </div>
+
+
+    <div class="why-grid">
+
+        <div class="why-card">
+
+            <span>🎯</span>
+
+            <h3>
+                Personalized
+            </h3>
+
+            <p>
+                Recommendations based on your interests,
+                goals and preferred destinations.
+            </p>
+
+        </div>
+
+
+        <div class="why-card">
+
+            <span>🌍</span>
+
+            <h3>
+                Global
+            </h3>
+
+            <p>
+                Explore universities and opportunities
+                beyond your country.
+            </p>
+
+        </div>
+
+
+        <div class="why-card">
+
+            <span>💡</span>
+
+            <h3>
+                Opportunities
+            </h3>
+
+            <p>
+                Discover competitions, programs,
+                scholarships and leadership experiences.
+            </p>
+
+        </div>
+
+
+        <div class="why-card">
+
+            <span>📚</span>
+
+            <h3>
+                Student-friendly
+            </h3>
+
+            <p>
+                Information presented simply so students
+                can understand their options.
+            </p>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =====================================================
+     FOOTER
+===================================================== -->
+
+<footer>
+
+    <div class="footer-main">
+
+        <div class="footer-brand">
+
+            <div class="logo">
+
+                <span class="logo-mark">
+                    T
+                </span>
+
+                <span>
+                    Tawjih
+                </span>
+
+            </div>
+
+            <p>
+                Helping students find their path.
+            </p>
+
+        </div>
+
+
+        <div class="footer-links">
+
+            <div>
+
+                <h4>
+                    Explore
+                </h4>
+
+                <a href="#universities">
+                    Universities
+                </a>
+
+                <a href="#opportunities">
+                    Opportunities
+                </a>
+
+                <a href="#find">
+                    Find My University
+                </a>
+
+            </div>
+
+
+            <div>
+
+                <h4>
+                    Tawjih
+                </h4>
+
+                <a href="#home">
+                    Home
+                </a>
+
+                <a href="#universities">
+                    Explore
+                </a>
+
+                <a href="#opportunities">
+                    Opportunities
+                </a>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <div class="footer-bottom">
+
+        <span>
+            © 2026 Tawjih
+        </span>
+
+        <span>
+            Find your path. Build your future.
+        </span>
+
+    </div>
+
+</footer>
+
+</main>
+
+
+<!-- =====================================================
+     JAVASCRIPT
+===================================================== -->
+
+<script src="script.js"></script>
+
+</body>
+</html>
